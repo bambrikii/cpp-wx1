@@ -1,3 +1,0 @@
-/home/asd/workspaceASD/cpp-wx1/build/CMakeFiles/app1.dir
-/home/asd/workspaceASD/cpp-wx1/build/CMakeFiles/edit_cache.dir
-/home/asd/workspaceASD/cpp-wx1/build/CMakeFiles/rebuild_cache.dir

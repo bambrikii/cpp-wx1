@@ -6,10 +6,12 @@
       "command": "/usr/bin/g++",
       "args": [
         "-fdiagnostics-color=always",
+        "${file}",
+        "-o",
+        "${fileDirname}/${fileBasenameNoExtension}",
         "-I/home/asd/Software/wxWidgets-3.2.1/lib/wx/include/gtk3-unicode-3.2",
         "-I/home/asd/Software/wxWidgets-3.2.1/include",
-        "-D",
-        "FILE_OFFSET_BITS=64",
+        "-D_FILE_OFFSET_BITS=64",
         "-DWXUSINGDLL",
         "-D__WXGTK__",
         "-pthread",
@@ -22,11 +24,7 @@
         "-lwx_gtk3u_core-3.2",
         "-lwx_baseu_xml-3.2",
         "-lwx_baseu_net-3.2",
-        "-lwx_baseu-3.2",
-        "-g",
-        "${file}",
-        "-o",
-        "${fileDirname}/${fileBasenameNoExtension}"
+        "-lwx_baseu-3.2"
       ],
       "options": {
         "cwd": "${fileDirname}"
