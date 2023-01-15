@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/home/asd/Software/wxWidgets-3.2.1/lib/wx/include/gtk3-unicode-3.2",
+                "/home/asd/Software/wxWidgets-3.2.1/include"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/g++",
+            "configurationProvider": "ms-vscode.makefile-tools",
+            "compilerArgs": [
+                "`/home/asd/Software/wxWidgets-3.2.1/wx-config --cxxflags --libs`"
+            ],
+            "cppStandard": "c++17",
+            "cStandard": "gnu17"
+        }
+    ],
+    "version": 4
+}
