@@ -12,6 +12,7 @@
             "configurationProvider": "ms-vscode.makefile-tools",
             "compilerArgs": [
                 "-fdiagnostics-color=always",
+                "-g",
                 "${file}",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}",
