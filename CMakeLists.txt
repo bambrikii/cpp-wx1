@@ -3,7 +3,7 @@ cmake_policy(SET CMP0048 NEW)
 
 set(CMAKE_CXX_COMPILER "/usr/bin/g++")
 
-project(App2 VERSION "1.0.0")
+project(App1 VERSION "1.0.0")
 
 set(THREADS_PREFER_PTHREAD_FLAG ON)
 
@@ -56,10 +56,16 @@ add_executable(app1 app1.cpp)
 
 target_include_directories(app1 PUBLIC ${wxWidgets_INCLUDE_DIRS})
 target_link_directories(app1 PUBLIC ${wxWidgets_DIR}/lib)
-link_directories(/usr/lib/x86_64-linux-gnu ${wxWidgets_DIR}/lib)
+target_link_directories(app1 PUBLIC /usr/lib/x86_64-linux-gnu)
+# link_directories(/usr/lib/x86_64-linux-gnu ${wxWidgets_DIR}/lib)
 
 # link_directories(${gtk_DIR})
 # link_directories(${wxWidgets_DIR}/lib)
 
 # target_link_libraries(app1 ${wxWidgets_DIR}/lib/)
 
+
+add_executable(app2 app2.cpp)
+target_include_directories(app2 PUBLIC ${wxWidgets_INCLUDE_DIRS})
+target_link_directories(app2 PUBLIC ${wxWidgets_DIR}/lib)
+target_link_directories(app2 PUBLIC /usr/lib/x86_64-linux-gnu)

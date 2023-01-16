@@ -11,7 +11,26 @@
             "compilerPath": "/usr/bin/g++",
             "configurationProvider": "ms-vscode.makefile-tools",
             "compilerArgs": [
-                "`/home/asd/Software/wxWidgets-3.2.1/wx-config --cxxflags --libs`"
+                "-fdiagnostics-color=always",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "-I/home/asd/Software/wxWidgets-3.2.1/lib/wx/include/gtk3-unicode-3.2",
+                "-I/home/asd/Software/wxWidgets-3.2.1/include",
+                "-D_FILE_OFFSET_BITS=64",
+                "-DWXUSINGDLL",
+                "-D__WXGTK__",
+                "-pthread",
+                "-L/home/asd/Software/wxWidgets-3.2.1/lib",
+                "-pthread",
+                "-Wl,-rpath,/home/asd/Software/wxWidgets-3.2.1/lib",
+                "-lwx_gtk3u_xrc-3.2",
+                "-lwx_gtk3u_html-3.2",
+                "-lwx_gtk3u_qa-3.2",
+                "-lwx_gtk3u_core-3.2",
+                "-lwx_baseu_xml-3.2",
+                "-lwx_baseu_net-3.2",
+                "-lwx_baseu-3.2"
             ],
             "cppStandard": "c++17",
             "cStandard": "gnu17"
